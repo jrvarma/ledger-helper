@@ -1,4 +1,4 @@
-# Python helper code for ledger-cli 
+# Python helper code for [`Ledger`](http://ledger-cli.org/)
 
  I have long desired a personal accounting software that can be populated with data from downloaded bank statements and other source documents with minimal manual intervention. [`GnuCash`](http://www.gnucash.org/) is a widely used open source software with enough capability to be used by small businesses. However, its ability to import data from other formats is very limited. It can import from [`Quicken`](https://en.wikipedia.org/wiki/Quicken_Interchange_Format), but since `Quicken` is not a proper [double entry](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system) software, this facility is not particularly useful. So even if I convert a downloaded bank statement into accounting entries, I still have to manually input these into `GnuCash`. That is more work than I am willing to do.
 
