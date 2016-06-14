@@ -46,5 +46,10 @@ The module `prepare_accounts.py`  takes one command line argument &ndash; the da
 
 Both `ledger_functions.py` and `prepare_accounts.py` are generic and can be used with minimal modifications by different users, but `make_je_list.py` must be specific to each user. It is the code that creates the journal entries for the year and would depend on the format in which the user&rsquo;s bank (and other financial firms) provides their statements as well as the specific heads of income and expenses of each user. My own `make_je_list.py` contains too much personal information for me to post it as an example file but a few details about how it works is given below.  My banks and other financial services firms provide statements in many different formats &ndash; XLS, TXT, HTML and PDF. All these formats other than PDF can be read by a spreadsheet program which can then save them as CSV text files. PDF files can also be converted to text using good old `ghostscript` (`gs -dBATCH -dNOPAUSE -sDEVICE=txtwrite`). My `make_je_list.py` reads these various CSV files, and uses regular expressions  to analyse these statements semi-automatically and generate accounting entries. I say semi-automatically because it has some interactive parts which require the user to choose the account name for entries where the regular expressions are not sufficient.
 
-The example folder contains a `make_je_list.py` which contains only a few journal entries and these are all hard coded. 
+# example
+
+The example folder contains some data files and a `make_je_list.py` which contains only a few journal entries (these are all hard coded). To run this example, `cd` to the folder containing  prepare_accounts.py and run the following command to get the opening and closing balance sheets, income statements, cash flow statements and also generate the opening and closing ledger files.
+
+`python prepare_accounts.py example`
+
 
