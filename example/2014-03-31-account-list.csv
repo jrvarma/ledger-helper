@@ -1,0 +1,20 @@
+full_name,name
+Assets,
+Assets:Financial Assets,
+Assets:Financial Assets:Fixed Deposits,fd
+Assets:Financial Assets:Savings Accounts,
+Assets:Financial Assets:Savings Accounts:SBI,sbi
+Assets:Financial Assets:Investments in Stocks,stock
+Liabilities,
+Income,
+Income:Investment Income,
+Income:Investment Income:Dividends,dividends
+Income:Salary,salary
+Expenses,
+Expenses:Cash Expenses,cash exp
+Expenses:Credit Card Expenses,cc exp
+Expenses:Income Tax,income tax
+Excess of Income over Expenses,surplus
+Equity,equity
+Equity:Savings 2014-15,savings 2014-15
+Equity:Opening Balance 2014-04-01,opening balance
