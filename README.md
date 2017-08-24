@@ -1,6 +1,6 @@
 # Python helper code for [`Ledger`](http://ledger-cli.org/)
 
-This repository contains some Python helper code to make more effective use of the [Plain Text Accounting](http://plaintextaccounting.org/) command line tool called [`Ledger`](http://ledger-cli.org/) for personal accounting. The motivation for this project is described in my [blog post](https://jrvcomputing.wordpress.com/2016/06/14/personal-accounting-software/).
+This repository contains some Python 3 helper code to make more effective use of the [Plain Text Accounting](http://plaintextaccounting.org/) command line tool called [`Ledger`](http://ledger-cli.org/) for personal accounting. The motivation for this project is described in my [blog post](https://jrvcomputing.wordpress.com/2016/06/14/personal-accounting-software/).
 
 The typical use case for this helper code is that of generating the personal accounting largely from  bank statements, credit card statements, portfolio transaction statements from stock brokers, mutual funds and other financial firms. Assuming that the user has written code to analyse these statements semi-automatically and generate accounting entries, the helper code in this project will help prepare a complete set of accounting statements from these entries. 
 
@@ -50,6 +50,6 @@ Both `ledger_functions.py` and `prepare_accounts.py` are generic and can be used
 
 The example folder contains some data files and a `make_je_list.py` which contains only a few journal entries (these are all hard coded). To run this example, `cd` to the folder containing  prepare_accounts.py and run the following command to get the opening and closing balance sheets, income statements, cash flow statements and also generate the opening and closing ledger files.
 
-`python prepare_accounts.py example`
+`python3 prepare_accounts.py example`
 
 

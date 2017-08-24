@@ -7,7 +7,7 @@ if len(sys.argv) < 2 :
     print("Argument not provided for data_path. Exiting ...\n")
     exit()
 data_path = sys.argv[1]
-sys.path += [data_path] # annual_settings & other python scripts are in data_path
+sys.path += [os.path.realpath(data_path)] # annual_settings & other python scripts are in data_path
 os.chdir(data_path) # all the data files are in data_path 
 from annual_settings import * # this contains file names and other year specific variables
 from make_je_list import je_list # je_list contains the journal entries for the year
